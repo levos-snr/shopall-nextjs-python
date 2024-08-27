@@ -40,3 +40,7 @@ next-env.d.ts
 
 #bun
 bun*
+
+*.tsbuildinfo
+next-env.d.ts
+__pycache__
