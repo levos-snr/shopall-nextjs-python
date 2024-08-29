@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "dev": "concurrently \"bun run next-dev\" \"bun run flask-dev\"",
-    "flask-dev": "FLASK_DEBUG=1 pip install -r requirements.txt && python3 -m flask --app api/index run -p 8000"
+    "flask-dev": "FLASK_DEBUG=1 pip install -r requirements.txt && python3 -m flask --app api/main run -p 8000"
   },
   "dependencies": {
     "@types/react": "npm:types-react@rc",
