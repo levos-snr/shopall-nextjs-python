@@ -1,6 +1,6 @@
-from flask import  request, jsonify
-from config import app, db
-from models import User
+from flask import Flask, request, jsonify
+from .config import app, db
+from .models import User
 
 @app.route("/api/welcome")
 def hello_world():
