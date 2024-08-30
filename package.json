@@ -9,7 +9,7 @@
     "flask-dev": "FLASK_DEBUG=1 pip install -r requirements.txt && python3 -m flask --app api/main run -p 8000",
     "dev": "concurrently \"bun run next-dev\" \"bun run flask-dev\"",
     "lint": "next lint",
-    "vercel-build": "pip install -r requirements.txt && flask db upgrade"
+    "vercel-build": "bash ./vercel_build.sh"
   },
   "dependencies": {
     "@types/react": "npm:types-react@rc",

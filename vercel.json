@@ -1,7 +1,17 @@
 {
   "builds": [
-    { "src": "api/__init__.py", "use": "@vercel/python" },
-    { "src": "package.json", "use": "@vercel/next" }
+    {
+      "src": "api/__init__.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.9"
+      }
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "api/__init__.py" },
